@@ -25,4 +25,11 @@ describe 'fizzbuzz' do
     it 'returns number if not multiple of 5 or 3' do
         expect(fizzbuzz(7)).to eq 7
     end
+
+    examples = { 1 => 1, 2 => 2}
+    examples.each do |number, result|
+      it "returns #{result} when passed #{number}" do
+      expect(fizzbuzz(number)).to eq result
+    end
+  end
 end
