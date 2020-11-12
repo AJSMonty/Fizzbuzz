@@ -19,7 +19,10 @@ describe 'fizzbuzz' do
     end
 
     it 'returns fizzbuzz when given 15' do
-      expect(fizzbuzz(15)).to eq 'fizzbuzz'
+        expect(fizzbuzz(15)).to eq 'fizzbuzz'
     end
 
+    it 'returns number if not multiple of 5 or 3' do
+        expect(fizzbuzz(7)).to eq 7
+    end
 end
